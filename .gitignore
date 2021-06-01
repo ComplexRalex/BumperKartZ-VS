@@ -1,0 +1,12 @@
+
+# Folders
+.vs/
+BumperKartzVS/Debug/
+BumperKartzVS/Release/
+BumperKartzVS/x64/
+
+# File extensions
+*.recipe
+*.ilk
+*.pdb
+*.dll

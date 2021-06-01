@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{2e8bda7d-e121-488e-af3f-6320371f9375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{43a25e59-f5a1-4899-b3e5-d98c10fa3598}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Utilities.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ground.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kart.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Model.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkyBox.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Wall.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="util\RgbImage.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="util\Utilities.hpp">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ground.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kart.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Model.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SkyBox.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Wall.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="util\RgbImage.hpp">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\baseX.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\baseY.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\floor.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\floor2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\space.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\upX.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\upY.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\wall.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\wall_large.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
