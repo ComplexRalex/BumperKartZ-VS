@@ -36,7 +36,7 @@ void init()
     glEnable(GL_DEPTH_TEST);
 
     escena.init();
-    escena.setSinglePlayer(false);
+    escena.setSinglePlayer(true);
 
     glutIgnoreKeyRepeat(true);
 }
@@ -63,8 +63,8 @@ void KeyboardInput(unsigned char key, int x, int y)
 {
     switch (key)
     {
-    case 27: exit(0); break;
-    default: escena.inputPressed(key, x, y);
+        case 27: exit(0); break;
+        default: escena.inputPressed(key, x, y);
     }
 }
 
@@ -77,12 +77,12 @@ void SpecialInput(int key, int x, int y)
 {
     switch (key)
     {
-    case GLUT_KEY_F11:
-        if (fullscreen)
-            glutReshapeWindow(WIDTH, HEIGHT);
-        else
-            glutFullScreen();
-        fullscreen = !fullscreen;
+        case GLUT_KEY_F11:
+            if (fullscreen)
+                glutReshapeWindow(WIDTH, HEIGHT);
+            else
+                glutFullScreen();
+            fullscreen = !fullscreen;
     }
 }
 

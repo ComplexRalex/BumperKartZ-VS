@@ -9,6 +9,7 @@
 #include <chrono>
 
 #include "../util/Utilities.hpp"
+#include "../util/Text.hpp"
 #include "SkyBox.hpp"
 #include "Camera.hpp"
 #include "Kart.hpp"

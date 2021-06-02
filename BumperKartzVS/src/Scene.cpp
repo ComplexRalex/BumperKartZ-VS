@@ -15,6 +15,9 @@ Scene::Scene():
 
     start = std::chrono::steady_clock::now();
     angle = 0.0f;
+
+    w = h = 300;
+    player = true;
 }
 
 Scene::~Scene(){}
@@ -394,17 +397,21 @@ void Scene::display()
 {
     updateMovement();
     handleCollisions();
+    Text::setDisplaySize(w,h);
     if(player)
     {
         setFullViewport();
         draw(&mx);
+        Text::draw("Player 1",GLUT_BITMAP_HELVETICA_18,10,h-28,1,1,1);
     }
     else
     {
         setHalfViewport(0,h/2);
         draw(&mx);
+        Text::draw("Player 1",GLUT_BITMAP_HELVETICA_18,10,h-56,1,1,1);
         setHalfViewport(0,0);
         draw(&my);
+        Text::draw("Player 2",GLUT_BITMAP_HELVETICA_18,10,h-56,1,1,1);
     }
 }
 
