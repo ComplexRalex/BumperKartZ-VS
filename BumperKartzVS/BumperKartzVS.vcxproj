@@ -28,6 +28,7 @@
     <ClCompile Include="src\SkyBox.cpp" />
     <ClCompile Include="src\Texture.cpp" />
     <ClCompile Include="src\Wall.cpp" />
+    <ClCompile Include="util\Menu.cpp" />
     <ClCompile Include="util\RgbImage.cpp" />
     <ClCompile Include="util\Text.cpp" />
     <ClCompile Include="util\Utilities.cpp" />
@@ -41,6 +42,7 @@
     <ClInclude Include="src\SkyBox.hpp" />
     <ClInclude Include="src\Texture.hpp" />
     <ClInclude Include="src\Wall.hpp" />
+    <ClInclude Include="util\Menu.hpp" />
     <ClInclude Include="util\RgbImage.hpp" />
     <ClInclude Include="util\Text.hpp" />
     <ClInclude Include="util\Utilities.hpp" />

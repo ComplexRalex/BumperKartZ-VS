@@ -18,15 +18,20 @@
 #define WIDTH 640
 #define HEIGHT 480
 
+#define O_X 100
+#define O_Y 100
+
 using namespace std;
 
 bool fullscreen = false;
+bool playing = true;
+
+int c_width, c_height;
 
 Scene escena;
 
 void init()
 {
-
     glPolygonMode(GL_FRONT, GL_FILL);
 
     glEnable(GL_CULL_FACE);
@@ -36,14 +41,19 @@ void init()
     glEnable(GL_DEPTH_TEST);
 
     escena.init();
-    escena.setSinglePlayer(true);
 
     glutIgnoreKeyRepeat(true);
 }
 
 void resize(int width, int height)
 {
-    escena.setSize(width, height);
+    if (!fullscreen)
+    {
+        c_width = width;
+        c_height = height;
+    }
+
+    escena.setSize(width,height);
 }
 
 void display()
@@ -52,7 +62,10 @@ void display()
 
     glPushMatrix();
 
-    escena.display();
+    //if(!playing)
+    //    // something about menu
+    //else
+        escena.display();
 
     glPopMatrix();
 
@@ -77,9 +90,15 @@ void SpecialInput(int key, int x, int y)
 {
     switch (key)
     {
+        case GLUT_KEY_F2:
+            glutReshapeWindow(WIDTH,HEIGHT);
+            break;
+        case GLUT_KEY_F3:
+            glutPositionWindow(O_X,O_Y);
+            break;
         case GLUT_KEY_F11:
             if (fullscreen)
-                glutReshapeWindow(WIDTH, HEIGHT);
+                glutReshapeWindow(c_width, c_height);
             else
                 glutFullScreen();
             fullscreen = !fullscreen;
@@ -95,7 +114,7 @@ int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
     glutInitWindowSize(WIDTH, HEIGHT);
-    glutInitWindowPosition(10, 10);
+    glutInitWindowPosition(O_X, O_Y);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutCreateWindow("Bumper KartZ VS");
 

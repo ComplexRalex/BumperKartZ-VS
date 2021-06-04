@@ -402,7 +402,7 @@ void Kart::attack(Kart *target, int seconds)
     //actualizando posicion del enemigo
     setDirectionVector(vecX,dirY,vecZ);
 
-    //acelarcion cada 3 segundos por 1 segundo
+    //acelarcion cada "seconds" segundos durante 1 segundo
     if(elapsed_time % seconds == 0)
         accelerateForward();
 }
