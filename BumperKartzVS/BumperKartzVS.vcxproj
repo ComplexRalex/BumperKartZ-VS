@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\Billboard.cpp" />
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\Ground.cpp" />
     <ClCompile Include="src\Kart.cpp" />
+    <ClCompile Include="src\MenuScene.cpp" />
     <ClCompile Include="src\Model.cpp" />
     <ClCompile Include="src\Scene.cpp" />
     <ClCompile Include="src\SkyBox.cpp" />
@@ -34,9 +36,11 @@
     <ClCompile Include="util\Utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Billboard.hpp" />
     <ClInclude Include="src\Camera.hpp" />
     <ClInclude Include="src\Ground.hpp" />
     <ClInclude Include="src\Kart.hpp" />
+    <ClInclude Include="src\MenuScene.hpp" />
     <ClInclude Include="src\Model.hpp" />
     <ClInclude Include="src\Scene.hpp" />
     <ClInclude Include="src\SkyBox.hpp" />

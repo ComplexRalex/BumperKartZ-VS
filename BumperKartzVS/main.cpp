@@ -133,7 +133,7 @@ void displayMenu()
     glLoadIdentity();
     gluLookAt(0,0,0,0,0,-1,0,1,0);
     Text::setDisplaySize(c_width, c_height);
-    Text::draw("3D-Masters 2021",GLUT_BITMAP_8_BY_13,5,5,1.0f,1.0f,1.0f);
+    Text::draw("ComplexRalex and 3D-Masters 2021",GLUT_BITMAP_8_BY_13,5,5,1.0f,1.0f,1.0f);
 
     current->display(50, 270, c_width, c_height);
 }
