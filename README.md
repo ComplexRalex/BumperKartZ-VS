@@ -34,11 +34,11 @@ There are two ways to play this.
 Right now, this game only runs on Windows.
 
 ## Screenshots
-![MainMenu1](https://user-images.githubusercontent.com/47804156/120939128-1c9ba800-c6dc-11eb-8c88-003977583e83.png)
-![Gameplay1](https://user-images.githubusercontent.com/47804156/120939250-cb3fe880-c6dc-11eb-8088-2c0d2d80350e.png)
-![Gameplay2](https://user-images.githubusercontent.com/47804156/120939253-ced36f80-c6dc-11eb-853e-5ec55d8549ee.png)
-![Gameplay3](https://user-images.githubusercontent.com/47804156/120939257-d0049c80-c6dc-11eb-921b-203d5c5fad04.png)
-![MainMenu2](https://user-images.githubusercontent.com/47804156/120939259-d266f680-c6dc-11eb-9a1b-e1ef4330fc3b.png)
+![MainMenu1](https://user-images.githubusercontent.com/47804156/120941083-64273180-c6e6-11eb-91e3-74d7c6e364ae.png)
+![Gameplay1](https://user-images.githubusercontent.com/47804156/120941085-65f0f500-c6e6-11eb-865e-46b765c8fc63.png)
+![Gameplay2](https://user-images.githubusercontent.com/47804156/120941086-67222200-c6e6-11eb-9a6f-493a2ab3bc0a.png)
+![Gameplay3](https://user-images.githubusercontent.com/47804156/120941089-68534f00-c6e6-11eb-9bad-8184a51bd751.png)
+![MainMenu2](https://user-images.githubusercontent.com/47804156/120941091-69847c00-c6e6-11eb-879e-02c29eb3d212.png)
 
 ## Report issues!
 BUGS?! BUT WHY! Nah, it's ok. There will always be bugs somewhere. You can report them [here](https://github.com/ComplexRalex/BumperKartZ-VS/issues/new/choose)! Also, you can request features (but depends on the complexity and time to add these though).
