@@ -1,6 +1,7 @@
 
 # Folders
 .vs/
+releases/
 BumperKartzVS/Debug/
 BumperKartzVS/Release/
 BumperKartzVS/x64/
