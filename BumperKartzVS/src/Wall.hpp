@@ -17,7 +17,6 @@ class Wall
         float x,y,z;
         float points[WALL_RES][2];
 
-        char* texFilename;
         Texture tex;
     public:
         Wall();

@@ -13,7 +13,6 @@ class SkyBox
         float x,y,z;
         float points[4][2];
 
-        char* texFilename;
         Texture tex;
     public:
         SkyBox();

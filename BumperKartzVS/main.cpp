@@ -15,6 +15,7 @@
 
 #include "util/Menu.hpp"
 #include "src/Scene.hpp"
+#include "src/MenuScene.hpp"
 
 #define WIDTH 720
 #define HEIGHT 480
@@ -36,6 +37,7 @@ int c_width, c_height;
 int w_width, w_height;
 
 Scene escena;
+MenuScene escenaMenu;
 
 Menu select("Select an option"), play("Play"), howto("How to play"), credits("Credits");
 Menu *current;
@@ -61,15 +63,21 @@ void initMenus()
     play.setSelectedColor(1.0f, 0.5f, 0.0f);
 
     // How to play menu
+    howto.addOption(new Option(" > Menu controls", GLUT_BITMAP_9_BY_15, false));
+    howto.addOption(new Option(" Move up: W - Move down: S - Select: <SPACE>", GLUT_BITMAP_8_BY_13, false));
+    howto.addOption(new Option(" > Special keys", GLUT_BITMAP_9_BY_15, false));
+    howto.addOption(new Option(" Fullscreen: F11 - Default size: F2 - Default position: F3 - Quick exit: F4", GLUT_BITMAP_8_BY_13, false));
+    howto.addOption(new Option("  ", GLUT_BITMAP_9_BY_15, false));
+    howto.addOption(new Option(" > In-game controls", GLUT_BITMAP_9_BY_15, false));
+    howto.addOption(new Option(" Return to menu: <ESCAPE>", GLUT_BITMAP_8_BY_13, false));
     howto.addOption(new Option(" > Player 1 controls", GLUT_BITMAP_9_BY_15, false));
     howto.addOption(new Option(" Go forward: W - Go backward: S - Turn right: D - Turn left: A", GLUT_BITMAP_8_BY_13, false));
-    howto.addOption(new Option("  ", GLUT_BITMAP_9_BY_15, false));
     howto.addOption(new Option(" > Player 2 controls", GLUT_BITMAP_9_BY_15, false));
     howto.addOption(new Option(" Go forward: I - Go backward: K - Turn right: L - Turn left: J", GLUT_BITMAP_8_BY_13, false));
     howto.addOption(new Option("  ", GLUT_BITMAP_9_BY_15, false));
     howto.addOption(new Option("Return", GLUT_BITMAP_HELVETICA_18, true));
-    howto.setGap(22);
-    howto.setSelected(6);
+    howto.setGap(18);
+    howto.setSelected(12);
     howto.lockSelected(true);
     howto.setSelectedColor(1.0f, 0.5f, 0.0f);
 
@@ -131,11 +139,11 @@ void displayMenu()
     gluPerspective(FOVY, (float)c_width/c_height, ZNEAR, ZFAR);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(0,0,0,0,0,-1,0,1,0);
+    escenaMenu.draw();
     Text::setDisplaySize(c_width, c_height);
     Text::draw("ComplexRalex and 3D-Masters 2021",GLUT_BITMAP_8_BY_13,5,5,1.0f,1.0f,1.0f);
 
-    current->display(50, 270, c_width, c_height);
+    current->display(50, 290, c_width, c_height);
 }
 
 void display()
@@ -204,7 +212,7 @@ void handleMenuInputs(unsigned char key)
             {
                 switch (current->getSelected())
                 {
-                    case 6:
+                    case 12:
                         current = &select;
                         break;
                 }
