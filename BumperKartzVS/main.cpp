@@ -28,6 +28,8 @@
 #define HOW_TO_MENU 'H'
 #define CREDITS_MENU 'C'
 
+#define VER std::string("1.0.0")
+
 using namespace std;
 
 bool fullscreen;
@@ -35,6 +37,8 @@ bool playing;
 
 int c_width, c_height;
 int w_width, w_height;
+
+int FPS = 60;
 
 Scene escena;
 MenuScene escenaMenu;
@@ -142,6 +146,7 @@ void displayMenu()
     escenaMenu.draw();
     Text::setDisplaySize(c_width, c_height);
     Text::draw("ComplexRalex and 3D-Masters 2021",GLUT_BITMAP_8_BY_13,5,5,1.0f,1.0f,1.0f);
+    Text::draw("Ver: "+VER,GLUT_BITMAP_8_BY_13,5,c_height-18,1.0f,1.0f,1.0f);
 
     current->display(50, 290, c_width, c_height);
 }
@@ -275,6 +280,12 @@ void SpecialUpInput(int key, int x, int y)
     return;
 }
 
+void limitFPS(int)
+{
+    glutPostRedisplay();
+    glutTimerFunc(1000/FPS,limitFPS,0);
+}
+
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
@@ -287,12 +298,12 @@ int main(int argc, char** argv)
 
     glutReshapeFunc(resize);
     glutDisplayFunc(display);
-    glutIdleFunc(display);
     glutKeyboardFunc(KeyboardInput);
     glutKeyboardUpFunc(KeyboardUpInput);
     glutSpecialFunc(SpecialInput);
     glutSpecialUpFunc(SpecialUpInput);
 
+    limitFPS(0);
     glutMainLoop();
 
     return 0;

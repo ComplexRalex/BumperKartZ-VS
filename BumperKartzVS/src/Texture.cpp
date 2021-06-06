@@ -12,6 +12,13 @@ void Texture::loadTexture(std::string filename)
 {
     rgbImage = new RgbImage(filename.c_str());
 
+    if (!rgbImage->ImageLoaded())
+    {
+        std::cout << "The resource \"" + filename + "\" couldn't be loaded. Make sure all the resources and 'res/' folder exists." << std::endl;
+        getchar();
+        exit(0);
+    }
+
     image = rgbImage->ImageData();
     width = rgbImage->GetNumCols();
     height = rgbImage->GetNumRows();

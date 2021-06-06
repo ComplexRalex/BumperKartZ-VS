@@ -34,7 +34,7 @@ Kart::Kart()
     velX = 0.0f; velZ = 0.0f;
     accX = 0.0f; accZ = 0.0f;
     s_magnitude = 1.0f;
-    r_magnitude = 2.5f;
+    r_magnitude = 2.8f;
 
     updateDirectionAngle();
 }
