@@ -28,7 +28,7 @@
 #define HOW_TO_MENU 'H'
 #define CREDITS_MENU 'C'
 
-#define VER std::string("1.0.0")
+#define VER std::string("1.0.1")
 
 using namespace std;
 
@@ -86,17 +86,23 @@ void initMenus()
     howto.setSelectedColor(1.0f, 0.5f, 0.0f);
 
     // Credits menu
-    credits.addOption(new Option("  > Game designed by", GLUT_BITMAP_9_BY_15, false));
+    credits.addOption(new Option("  > Game designed by 3D-Masters", GLUT_BITMAP_9_BY_15, false));
     credits.addOption(new Option("  * MrAlexbross/ComplexRalex * DannyMannn * Mokkuman *", GLUT_BITMAP_HELVETICA_12, false));
     credits.addOption(new Option("  ", GLUT_BITMAP_HELVETICA_12, false));
     credits.addOption(new Option("  > Continued by", GLUT_BITMAP_9_BY_15, false));
     credits.addOption(new Option("  * MrAlexbross/ComplexRalex *", GLUT_BITMAP_HELVETICA_12, false));
     credits.addOption(new Option("  ", GLUT_BITMAP_HELVETICA_12, false));
+    credits.addOption(new Option("  > Written in", GLUT_BITMAP_9_BY_15, false));
+    credits.addOption(new Option("  * C++, with OpenGL (FreeGLUT) *", GLUT_BITMAP_HELVETICA_12, false));
+    credits.addOption(new Option("  ", GLUT_BITMAP_HELVETICA_12, false));
+    credits.addOption(new Option("  > Used libraries", GLUT_BITMAP_9_BY_15, false));
+    credits.addOption(new Option("  * RgbImage, by Sam Buss *", GLUT_BITMAP_HELVETICA_12, false));
+    credits.addOption(new Option("  ", GLUT_BITMAP_HELVETICA_12, false));
     credits.addOption(new Option("  I love you Bichi <3", GLUT_BITMAP_9_BY_15, true));
     credits.addOption(new Option("  ", GLUT_BITMAP_HELVETICA_12, false));
     credits.addOption(new Option("Return", GLUT_BITMAP_HELVETICA_18, true));
-    credits.setGap(22);
-    credits.setSelected(8);
+    credits.setGap(15);
+    credits.setSelected(14);
     credits.setSelectedColor(1.0f, 0.5f, 0.0f);
 }
 
@@ -226,7 +232,7 @@ void handleMenuInputs(unsigned char key)
             {
                 switch (current->getSelected())
                 {
-                    case 8:
+                    case 14:
                         current = &select;
                         break;
                 }
