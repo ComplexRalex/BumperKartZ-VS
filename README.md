@@ -1,7 +1,7 @@
 # BumperKartZ-VS
 A mini-game about bumper karts (cars). Originally created by me and my friends for a final project on the Computer Graphics course in the college. Now I've added some new stuff!
 
-![Logotype of the game 'Bumper KartZ'](https://user-images.githubusercontent.com/47804156/120938167-35ee2580-c6d7-11eb-90c6-567142da6c3d.png)
+![Logotype of the game 'Bumper KartZ'](https://user-images.githubusercontent.com/47804156/120940456-034a2a00-c6e3-11eb-9a3d-e135d39ae921.png)
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/ComplexRalex/BumperKartZ-VS)](https://github.com/ComplexRalex/BumperKartZ-VS/releases/latest) [![GitHub Release Date](https://img.shields.io/github/release-date/ComplexRalex/BumperKartZ-VS)](https://github.com/ComplexRalex/BumperKartZ-VS/releases/latest) [![GitHub last commit](https://img.shields.io/github/last-commit/ComplexRalex/BumperKartZ-VS)](https://github.com/ComplexRalex/BumperKartZ-VS/commit/master) [![GitHub](https://img.shields.io/github/license/ComplexRalex/BumperKartZ-VS)](https://github.com/ComplexRalex/BumperKartZ-VS/blob/master/LICENSE)
 
