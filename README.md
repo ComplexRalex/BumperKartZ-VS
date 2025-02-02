@@ -49,11 +49,11 @@ Right now, this game only runs on Windows.
 
 ## Screenshots
 
-![MainMenu1](https://user-images.githubusercontent.com/47804156/120941083-64273180-c6e6-11eb-91e3-74d7c6e364ae.png)
-![Gameplay1](https://user-images.githubusercontent.com/47804156/120941085-65f0f500-c6e6-11eb-865e-46b765c8fc63.png)
-![Gameplay2](https://user-images.githubusercontent.com/47804156/120941086-67222200-c6e6-11eb-9a6f-493a2ab3bc0a.png)
-![Gameplay3](https://user-images.githubusercontent.com/47804156/120941089-68534f00-c6e6-11eb-9bad-8184a51bd751.png)
-![MainMenu2](https://user-images.githubusercontent.com/47804156/120941091-69847c00-c6e6-11eb-879e-02c29eb3d212.png)
+![MainMenu1](https://github.com/user-attachments/assets/a2f3d435-d184-4558-b9b4-e8072c5b20f5)
+![Gameplay3](https://github.com/user-attachments/assets/aaa2914b-3bf6-42f2-9514-5b400e87395b)
+![Gameplay2](https://github.com/user-attachments/assets/12c15879-5d8f-4a5e-9bbc-83ff8fc1b4c7)
+![Gameplay1](https://github.com/user-attachments/assets/efd44a4d-3c49-4489-a20d-f760e1eee153)
+![MainMenu2](https://github.com/user-attachments/assets/27e361e3-1eb2-4aff-a66e-b8ce33d74dd2)
 
 ## Report issues!
 
